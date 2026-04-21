@@ -87,4 +87,7 @@ body {
 /* HEADLINE FEEL */
 h1, h2, h3 {
   letter-spacing: -0.02em;
+}/* globals.css */
+::-webkit-scrollbar {
+  display: none;
 }

@@ -1,3 +1,6 @@
+import { BadgePercent, PaintRoller, ShieldCheck, Clock } from "lucide-react";
+import { Users, ThumbsUp } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 export default function Page() {
   return (
     <section className="relative w-full min-h-screen bg-[#f3f3f3] flex items-center justify-center overflow-hidden">
@@ -65,42 +68,134 @@ export default function Page() {
         </div>
 
         {/* KARTLAR */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+  
 
-          {[
-            ["Uygun Fiyat", "Bütçe dostu"],
-            ["Temiz İşçilik", "Pürüzsüz sonuç"],
-            ["Garantili", "İşçilik garantisi"],
-            ["Zamanında", "Söz verdiğimiz gün"],
-          ].map((item, i) => (
-            <div key={i} className="bg-white/90 backdrop-blur p-4 rounded-xl shadow-sm">
-              <p className="font-semibold text-gray-800 text-sm">{item[0]}</p>
-              <p className="text-xs text-gray-500">{item[1]}</p>
-            </div>
-          ))}
+<div className="grid grid-cols-4 gap-2 mt-6">
 
+  {[
+    {
+      icon: <BadgePercent className="w-4 h-4 text-green-600" />,
+      title: "Uygun Fiyat",
+      desc: "Bütçe dostu",
+    },
+    {
+      icon: <PaintRoller className="w-4 h-4 text-green-600" />,
+      title: "Temiz İşçilik",
+      desc: "Pürüzsüz",
+    },
+    {
+      icon: <ShieldCheck className="w-4 h-4 text-green-600" />,
+      title: "Garantili",
+      desc: "İşçilik",
+    },
+    {
+      icon: <Clock className="w-4 h-4 text-green-600" />,
+      title: "Zamanında",
+      desc: "Teslim",
+    },
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="bg-white border border-gray-200 p-2 rounded-xl text-center shadow-sm"
+    >
+      {/* ICON */}
+      <div className="flex justify-center mb-1">
+        <div className="w-7 h-7 flex items-center justify-center border border-green-200 rounded-lg bg-green-50">
+          {item.icon}
         </div>
+      </div>
 
+      {/* TITLE */}
+      <p className="font-semibold text-[10px] text-gray-800 leading-tight">
+        {item.title}
+      </p>
+
+      {/* DESC */}
+      <p className="text-[9px] text-gray-500 leading-tight">
+        {item.desc}
+      </p>
+    </div>
+  ))}
+
+</div>
         {/* CTA */}
-        <div className="mt-8 flex flex-col gap-3 items-center">
+      
 
-          <a
-            href="tel:+905456433535"
-            className="w-full max-w-sm bg-gradient-to-r from-green-600 to-green-500 text-white py-4 rounded-xl font-semibold text-base shadow-lg hover:scale-[1.02] transition"
-          >
-            📞 Ücretsiz Keşif
-          </a>
+<div className="mt-10 w-full max-w-md mx-auto space-y-4">
 
-          <a
-            href="https://wa.me/905456433535"
-            target="_blank"
-            rel="noreferrer"
-            className="w-full max-w-sm border border-gray-200 bg-white py-4 rounded-xl font-semibold text-base text-gray-800 hover:bg-gray-50 transition"
-          >
-            💬 WhatsApp’tan Yaz
-          </a>
+  {/* ÜST BİLGİ KUTUSU */}
+  <div className="flex items-center gap-3 bg-green-100 text-green-800 p-4 rounded-2xl">
 
-        </div>
+    <div className="w-10 h-10 flex items-center justify-center bg-green-600 text-white rounded-full">
+      <Phone className="w-5 h-5" />
+    </div>
+
+    <div className="text-left">
+      <p className="font-semibold text-sm">
+        Bir telefon kadar yakınız!
+      </p>
+      <p className="text-xs text-green-700">
+        Ücretsiz keşif için hemen arayın.
+      </p>
+    </div>
+
+  </div>
+
+  {/* ANA BUTON */}
+  <a
+    href="tel:+905456433535"
+    className="w-full flex flex-col items-center justify-center bg-[#0f172a] text-white py-4 rounded-2xl shadow-lg hover:opacity-90 transition"
+  >
+    <div className="flex items-center gap-2 font-semibold">
+      <Phone className="w-4 h-4" />
+      Ücretsiz Keşif İsteyin
+    </div>
+    <span className="text-xs text-gray-300 mt-1">
+      Hemen arayın, ücretsiz keşif fırsatını kaçırmayın!
+    </span>
+  </a>
+
+  {/* WHATSAPP */}
+  <a
+    href="https://wa.me/905456433535"
+    target="_blank"
+    rel="noreferrer"
+    className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 py-4 rounded-2xl font-semibold text-green-600 shadow-sm hover:bg-gray-50 transition"
+  >
+    <MessageCircle className="w-5 h-5" />
+    WhatsApp’tan Yazın
+  </a>
+
+  {/* ALT GÜVEN ALANI */}
+  <div className="grid grid-cols-3 gap-2 pt-4 border-t border-gray-200 text-center">
+
+    <div className="flex flex-col items-center text-xs text-gray-600">
+      <ShieldCheck className="w-5 h-5 text-green-600 mb-1" />
+      <p className="font-semibold">Güvenilir Hizmet</p>
+      <span className="text-[10px] text-gray-500">
+        İstanbul’un her noktasına hizmet
+      </span>
+    </div>
+
+    <div className="flex flex-col items-center text-xs text-gray-600">
+      <Users className="w-5 h-5 text-green-600 mb-1" />
+      <p className="font-semibold">Deneyimli Ekip</p>
+      <span className="text-[10px] text-gray-500">
+        Alanında uzman boya ustaları
+      </span>
+    </div>
+
+    <div className="flex flex-col items-center text-xs text-gray-600">
+      <ThumbsUp className="w-5 h-5 text-green-600 mb-1" />
+      <p className="font-semibold">%100 Memnuniyet</p>
+      <span className="text-[10px] text-gray-500">
+        Önceliğimiz müşteri memnuniyeti
+      </span>
+    </div>
+
+  </div>
+
+</div>
 
       </div>
     </section>
