@@ -31,51 +31,40 @@ export default function Home() {
     <div className="min-h-screen bg-zinc-50 text-zinc-900 font-sans selection:bg-green-200">
       
       {/* HERO SECTION */}
-     <section className="relative pt-20 pb-14 px-4 text-center overflow-hidden">
+    <section className="relative pt-20 pb-14 px-4 text-center overflow-hidden">
 
-  {/* ARKA PLAN */}
+  {/* ARKA PLAN (OPTİMİZE) */}
   <div className="absolute inset-0 z-0 pointer-events-none">
-    <div className="absolute w-[500px] h-[500px] bg-zinc-200/50 blur-[100px] top-[-100px] left-[-100px] rounded-full" />
-    <div className="absolute w-[400px] h-[400px] bg-green-400/20 blur-[120px] bottom-[-100px] right-[-100px] rounded-full" />
+    <div className="absolute w-[400px] h-[400px] bg-zinc-200/40 blur-[60px] top-[-80px] left-[-80px] rounded-full" />
+    <div className="absolute w-[300px] h-[300px] bg-green-400/20 blur-[80px] bottom-[-80px] right-[-80px] rounded-full" />
   </div>
 
   <motion.div 
-    className="relative z-10 max-w-4xl mx-auto"
-    initial="hidden"
-    animate="visible"
-    variants={staggerContainer}
+    className="relative z-10 max-w-4xl mx-auto will-change-transform"
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
   >
 
     {/* LOGO */}
-    <motion.div variants={fadeIn} className="mb-4">
+    <div className="mb-4">
 
-      <motion.h1 className="text-2xl md:text-5xl font-extrabold tracking-tight">
+      <h1 className="text-2xl md:text-5xl font-extrabold tracking-tight">
         <span className="text-zinc-900">İstanbul </span>
 
-        <motion.span
-          className="bg-gradient-to-r from-green-500 to-emerald-700 bg-clip-text text-transparent"
-          animate={{ opacity: [0.85, 1, 0.85] }}
-          transition={{ duration: 2.5, repeat: Infinity }}
-        >
+        <span className="bg-gradient-to-r from-green-500 to-emerald-700 bg-clip-text text-transparent">
           Boya
-        </motion.span>
-      </motion.h1>
+        </span>
+      </h1>
 
-      {/* ALT YAZI (RENK AYRILDI) */}
-      <motion.p
-        variants={fadeIn}
-        className="text-sm text-zinc-500 tracking-wide mt-1"
-      >
+      <p className="text-sm text-zinc-500 tracking-wide mt-1">
         Profesyonel Boya & Badana Hizmeti
-      </motion.p>
+      </p>
 
-    </motion.div>
+    </div>
 
-    {/* ALT SLOGAN (RENK AYRILDI) */}
-    <motion.div 
-      variants={fadeIn} 
-      className="flex items-center justify-center gap-3 mb-6"
-    >
+    {/* ALT SLOGAN */}
+    <div className="flex items-center justify-center gap-3 mb-6">
       <div className="h-[1px] w-8 bg-zinc-200" />
 
       <span className="text-[11px] md:text-xs tracking-[0.18em] uppercase text-zinc-500 font-medium">
@@ -83,44 +72,32 @@ export default function Home() {
       </span>
 
       <div className="h-[1px] w-8 bg-zinc-200" />
-    </motion.div>
+    </div>
 
     {/* BAŞLIK */}
-<motion.h2 
-  variants={fadeIn} 
-  className="text-3xl md:text-5xl font-extrabold leading-tight mb-4 text-zinc-900"
->
-  Eviniz{" "}
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-indigo-600">
-    Sıfır Gibi
-  </span>{" "}
-  Olsun
-</motion.h2>
+    <h2 className="text-3xl md:text-5xl font-extrabold leading-tight mb-4 text-zinc-900">
+      Eviniz{" "}
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-indigo-600">
+        Sıfır Gibi
+      </span>{" "}
+      Olsun
+    </h2>
 
     {/* AÇIKLAMA */}
-    <motion.p 
-      variants={fadeIn} 
-      className="text-base md:text-lg text-zinc-500 mb-6 max-w-2xl mx-auto"
-    >
+    <p className="text-base md:text-lg text-zinc-500 mb-6 max-w-2xl mx-auto">
       Temiz işçilik, kokusuz boya ve zamanında teslim garantisi ile
       evinizi baştan sona yeniliyoruz.
-    </motion.p>
+    </p>
 
     {/* GÜVEN */}
-    <motion.div 
-      variants={fadeIn} 
-      className="flex flex-wrap justify-center gap-4 text-xs text-zinc-500 mb-6"
-    >
+    <div className="flex flex-wrap justify-center gap-4 text-xs text-zinc-500 mb-6">
       <span>✔ Aynı gün keşif</span>
       <span>✔ 1 günde teslim</span>
       <span>✔ Garantili işçilik</span>
-    </motion.div>
+    </div>
 
     {/* CTA */}
-    <motion.div 
-      variants={fadeIn} 
-      className="flex flex-col sm:flex-row gap-3 justify-center items-center"
-    >
+    <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
       <a 
         href="tel:+905456433535" 
         className="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg"
@@ -138,7 +115,7 @@ export default function Home() {
         <MessageCircle className="w-4 h-4 text-green-500" />
         WhatsApp
       </a>
-    </motion.div>
+    </div>
 
   </motion.div>
 </section>
