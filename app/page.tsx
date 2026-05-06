@@ -49,11 +49,21 @@ export default function Page() {
           </div>
 
           {/* LOGO */}
-          <h1 className="mt-5 text-4xl md:text-6xl font-black leading-none tracking-tight">
-            <span className="text-black">Özdurmuş</span>
-            <br />
-            <span className="text-yellow-500">Hidrolik</span>
-          </h1>
+          <div className="flex justify-center items-center text-center mt-5">
+  <h1 className="text-4xl md:text-6xl font-black leading-none tracking-tight">
+    <span className="block text-black">Özdurmuş</span>
+
+    <div className="flex items-center justify-center gap-3 mt-2">
+      <div className="w-10 md:w-16 h-[3px] bg-yellow-500 rounded-full" />
+      
+      <span className="text-yellow-500 drop-shadow-sm">
+        Hidrolik
+      </span>
+
+      <div className="w-10 md:w-16 h-[3px] bg-yellow-500 rounded-full" />
+    </div>
+  </h1>
+</div>
 
           {/* ALT YAZI */}
           <p className="mt-4 text-sm md:text-lg text-gray-700 max-w-xl leading-relaxed font-medium">
