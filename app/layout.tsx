@@ -14,7 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ozdurmushidrolik.com.tr"),
-
+verification: {
+  google: "y7dscYZAj7QIgwaxSrmq4KOt5J69vnGeG_BRlzh2M0A",
+},
   title: {
     default:
       "Özdurmuş Hidrolik | Forklift, Havalı Kriko ve Transpalet Servisi",
