@@ -24,7 +24,7 @@ verification: {
   },
 
   description:
-    "Özdurmuş Hidrolik; Gaziantep, Kahramanmaraş, Malatya, Şanlıurfa ve Adıyaman çevresinde forklift, havalı kriko, transpalet, hidrolik sistem tamiri, bakım ve teknik servis hizmeti sunar.",
+    "Özdurmuş Hidrolik; Gaziantep, Kahramanmaraş, Malatya, Şanlıurfa ve Adıyaman çevresinde , havalı kriko, transpalet, hidrolik sistem tamiri, bakım ve teknik servis hizmeti sunar.",
 
   keywords: [
     "Özdurmuş Hidrolik",
@@ -57,7 +57,7 @@ verification: {
 
   openGraph: {
     title:
-      "Özdurmuş Hidrolik | Forklift, Havalı Kriko ve Transpalet Servisi",
+      "Özdurmuş Hidrolik | Havalı Kriko ve Transpalet Servisi",
 
     description:
       "Gaziantep, Kahramanmaraş, Malatya, Şanlıurfa ve Adıyaman çevresinde profesyonel hidrolik servis hizmeti.",
@@ -87,7 +87,7 @@ verification: {
       "Özdurmuş Hidrolik | ve Hidrolik Teknik Servis",
 
     description:
-      "Forklift, havalı kriko ve transpalet servis çözümleri.",
+      "Havalı kriko ve transpalet servis çözümleri.",
 
     images: ["/gorsel.jpg"],
   },
