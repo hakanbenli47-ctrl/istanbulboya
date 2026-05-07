@@ -21,7 +21,7 @@ export default function Page() {
       <div className="absolute inset-0 z-0 flex justify-end">
         <img
           src="/gorsel.jpg"
-          alt="hidrolik forklift kriko transpalet servisi"
+        alt="Özdurmuş Hidrolik teknik servis"
           className="
             h-[420px] md:h-full
             w-full md:w-[45%]
@@ -66,20 +66,20 @@ export default function Page() {
 </div>
 
           {/* ALT YAZI */}
-          <p className="mt-4 text-sm md:text-lg text-gray-700 max-w-xl leading-relaxed font-medium">
-            Forklift, havalı kriko ve transpaletleriniz için güvenilir teknik servis,
-            tamir ve bakım çözümleri.
-          </p>
+        <p className="mt-4 text-sm md:text-lg text-gray-700 max-w-xl leading-relaxed font-medium">
+  Özdurmuş Hidrolik; Gaziantep, Kahramanmaraş, Malatya,
+  Şanlıurfa ve Adıyaman çevresinde havalı kriko,
+  transpalet, hidrolik sistem tamiri, bakım ve teknik
+  servis hizmeti sunar.
+</p>
 
           {/* BAŞLIK */}
           <h2 className="mt-7 md:mt-8 text-3xl md:text-5xl font-extrabold leading-tight text-black max-w-2xl">
-            Arıza Beklemez,{" "}
-            <span className="text-yellow-500">
-              Servis Hızlı
-            </span>
-            <br />
-            Gelir
-          </h2>
+  Havalı Kriko, Transpalet ve
+  <span className="text-yellow-500 block mt-2">
+    Hidrolik Sistem Servisi
+  </span>
+</h2>
 
           {/* METİN */}
           <div className="mt-6 space-y-3 max-w-xl">
@@ -87,7 +87,7 @@ export default function Page() {
             <div className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 text-yellow-500 mt-[2px] shrink-0" />
               <p className="text-gray-800 text-sm md:text-base font-medium">
-                Forklift, havalı kriko ve transpalet arızalarında hızlı müdahale
+                 havalı kriko ve transpalet arızalarında hızlı müdahale
               </p>
             </div>
 
@@ -204,7 +204,7 @@ export default function Page() {
           </a>
 
           <a
-            href="https://wa.me/905011307386?text=Merhaba,%20hidrolik%20forklift,%20haval%C4%B1%20kriko%20veya%20transpalet%20servisi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+            href="https://wa.me/905011307386?text=Merhaba,%20hidrolik%20haval%C4%B1%20kriko%20veya%20transpalet%20servisi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
             target="_blank"
             rel="noreferrer"
             className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 py-4 rounded-2xl font-semibold text-yellow-600 shadow-sm hover:bg-gray-50 transition"
@@ -225,7 +225,7 @@ export default function Page() {
             </a>
 
             <a
-              href="https://www.google.com/maps/place/%C3%96zdurmu%C5%9F+Hidrolik/@37.0815682,37.4233249,17z/data=!3m1!4b1!4m6!3m5!1s0x1531e5444bec3fa1:0x3f4b16c814204e34!8m2!3d37.081564!4d37.4281958!16s%2Fg%2F11xfhyr88q!5m2!1e4!1e2?hl=tr&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+             href="https://www.google.com/maps/search/+60537+sok+no%2F7+%C5%9Fehitkamil+gaziantep/@37.0814841,37.4226419,16z/data=!5m2!1e4!1e2?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noreferrer"
               className="w-full flex items-center justify-center gap-2 bg-white border border-gray-200 py-4 rounded-2xl font-semibold text-black shadow-sm hover:bg-gray-50 transition"
@@ -301,7 +301,7 @@ export default function Page() {
         </a>
 
         <a
-          href="https://wa.me/905011307386?text=Merhaba,%20hidrolik%20forklift,%20haval%C4%B1%20kriko%20veya%20transpalet%20servisi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+          href="https://wa.me/905011307386?text=Merhaba,%20hidrolik%20haval%C4%B1%20kriko%20veya%20transpalet%20servisi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-2 bg-yellow-500 text-black px-3 py-2 rounded-full shadow-2xl border border-black/10 hover:scale-105 transition"

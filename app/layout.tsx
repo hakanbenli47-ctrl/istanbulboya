@@ -19,7 +19,7 @@ verification: {
 },
   title: {
     default:
-      "Özdurmuş Hidrolik | Forklift, Havalı Kriko ve Transpalet Servisi",
+      "Özdurmuş Hidrolik |  Havalı Kriko ve Transpalet Servisi",
     template: "%s | Özdurmuş Hidrolik",
   },
 
@@ -29,8 +29,6 @@ verification: {
   keywords: [
     "Özdurmuş Hidrolik",
     "hidrolik servis",
-    "forklift servisi",
-    "forklift tamiri",
     "havalı kriko tamiri",
     "havalı kriko servisi",
     "transpalet tamiri",
@@ -38,19 +36,13 @@ verification: {
     "hidrolik sistem tamiri",
     "hidrolik bakım",
     "Gaziantep hidrolik servis",
-    "Gaziantep forklift servisi",
     "Gaziantep transpalet tamiri",
     "Gaziantep havalı kriko tamiri",
     "Kahramanmaraş hidrolik servis",
-    "Maraş forklift servisi",
-    "Kahramanmaraş forklift tamiri",
     "Malatya hidrolik servis",
-    "Malatya forklift servisi",
     "Şanlıurfa hidrolik servis",
-    "Urfa forklift tamiri",
     "Şanlıurfa transpalet tamiri",
     "Adıyaman hidrolik servis",
-    "Adıyaman forklift servisi",
   ],
 
   alternates: {
@@ -92,7 +84,7 @@ verification: {
     card: "summary_large_image",
 
     title:
-      "Özdurmuş Hidrolik | Forklift ve Hidrolik Teknik Servis",
+      "Özdurmuş Hidrolik | ve Hidrolik Teknik Servis",
 
     description:
       "Forklift, havalı kriko ve transpalet servis çözümleri.",
